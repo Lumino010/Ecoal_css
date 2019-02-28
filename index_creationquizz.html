@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title> The E.mines Quiz </title>
+</head>
+
+<body>
+
+	<header id="header">
+        <div id="visible_header">
+            <div class="header-toogle">
+                <a href="#header" id="header-toogle-open"> &#9776; </a>
+                <a href="#" id="header-toogle-close"> &#9747; </a></li>
+            </div>
+            <h2> the e.mines quiz</h2>
+        </div>
+        
+     <nav id= "burger_menu">
+        <ul>
+            <li><strong>Menu</strong></li>
+            <li class="menu_categorie"> <a href="#">Home</a></li>
+            <li class="menu_categorie"> <a href="#">Find a Quiz</a></li>
+            <li class="menu_categorie"> <a href="#">Create a Quiz</a></li>
+            <li class="menu_categorie"> <a href="#">Login</a></li>
+            <li class="menu_categorie"> <a href="#">Register</a></li>
+            <li class="menu_categorie"> <a href="#">About</a></li>
+         </ul>
+    </nav>
+	</header>
+    
+    <div id="quiz-creation">
+        
+        <h2 id="quiz-form-title"> Create a new Quiz !</h2>
+        
+        <form id="quiz-form">
+            <div id="formfirstline">
+                <label for="QuizName">Quiz name : </label><input type="text" name="QuizName">
+                <button id="QuizzPictureButton" type="button" onclick="">Quiz picture</button>
+            </div>
+            
+            <br>
+            <label for="QuizKeywords">Keywords <small>(separated by ; )</small>: </label><input type="text" name="QuizKeywords">
+            
+            
+            <div id="form-question-param">
+            <label for="Question">Question : </label><input type="text" name="Question">
+            <br>
+            <label for="QuestionVideo">Video <small>(optionnal )</small>: </label><button type="button" onclick="QuestionVideo">Choose a file</button>
+            <br>
+            <div>
+                <label>Answer type : </label> 
+                <input class="radio" type="radio" name="image" value="image"> <label for="image">Image</label> 
+                <input class="radio" type="radio" name="sentence" value="sentence" > <label for="sentence">Sentence</label>
+            </div>
+            <br>
+            <label for="AnswerNumber">Answers number : </label><input type="number" name="AnswerNumber" min="2" max="4">
+            </div>
+            
+            <button type="button" onclick="">Submite question</button>
+            <br>
+            <button type="submit" onclick="">Send the Quiz</button>
+        </form>
+        
+    </div>
+	
+
+
+</body>
+
+</html> 

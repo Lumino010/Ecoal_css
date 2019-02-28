@@ -1,0 +1,357 @@
+
+body {
+    background-color: #222222;
+    margin: 0px;
+}
+
+header {
+    background-color: #161616;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 0px 6px 6px #080808;
+}
+
+#visible_header{
+    background-color: #161616;
+    display: flex;
+}
+
+header h2{
+    text-transform: uppercase;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 22pt;
+}
+
+#header-toogle-open{
+    color: white;
+    text-decoration: none;
+    font-size: 36pt;
+    margin-right: 45px;
+    padding-top: 8px;
+    display: block;
+}
+
+#header-toogle-close {
+    color: white;
+    text-decoration: none;
+    font-size: 28pt;
+    padding-top: 18px;
+    margin-right: 45px;
+    display: none;
+}
+
+#header:target #burger_menu{
+    height: 150%;
+    display: inline-block;
+}
+
+
+#header:target #header-toogle-open{
+    display: none;
+}
+
+#header:target #header-toogle-close{
+    display: block;
+}
+
+
+#header:target #burger_menu ul{
+    height: 600px;
+    padding: 0px;
+   
+}
+
+/*#burger_menu:target~#categories_box{
+    display: none;
+} */
+
+#burger_menu{
+    
+    overflow: hidden;
+    background-color: #161616;
+    color: white;
+    height: 0px;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    transition: height 1s;
+}
+
+#burger_menu ul{
+    list-style: none;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 28pt;
+    padding: 0px;
+    margin: 0px;
+    height: 0px;
+    transition: height 0.7s;
+}
+
+#burger_menu li{
+    border-bottom: solid white 3px;
+    text-align: center;
+    padding: 12px 0px 12px 0px;
+    transition: background-color 1s , color 1.5s;
+}
+
+.menu_categorie a{
+    color: white;
+    text-decoration: none;
+    transition: color 1.5s;
+}
+
+.menu_categorie:hover{
+    background-color: white;
+    color: #161616;
+}
+
+.menu_categorie:hover a{
+    color: #161616;
+}
+
+#categories_box {
+    margin-top: 70px;
+    padding-top: 5px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+}
+
+.categorie {
+    height: 21%;
+    margin-bottom: 18px;
+}
+
+#categorie1{
+    background-image:-moz-linear-gradient(left, #42ffff, #1084d1);
+}
+
+#categorie2{
+    background-image:-moz-linear-gradient(left, #7cf4bc, #11c6b1);
+}
+
+#categorie3{
+    background-image:-moz-linear-gradient(left, #e54510, #f9a804);
+}
+
+#categorie4{
+    background-image:-moz-linear-gradient(left, #afa997, #e5e3dc);
+}
+
+.categorie:hover img{
+       
+    width: 75px;
+    height: 75px;
+}
+
+.categorie img{
+    width: 1px;
+    height: 1px;
+    margin-right: 55px;
+    padding-top: 10px;
+    transition: width 0.60s , height 0.60s;
+}
+
+.categorie a{
+    height: 77%;
+    display: flex;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 18px;
+    padding-bottom: 13px;
+}
+
+.categorie_title {
+    color: white;
+    text-decoration: none;
+    font-size: 18pt;
+    font-family: "Myriad Pro", sans-serif;
+    text-align: center;
+    font-size: 16pt;
+}
+
+.categorie_title p {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 38pt;
+    font-weight: bold;
+}
+
+#question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#question-number{
+    color: white;
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 500;
+    font-size: 22pt;
+    margin: 35px 0px 18px 0px;
+    padding-bottom: 5px;
+    width: 38%;
+    text-align: center;
+    border-bottom: solid white 2px;
+}
+
+
+#question-image-box{
+    display: inline-block;
+    position: relative;
+    padding-top: 60%;
+    width: 60%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: solid white 5px;
+}
+
+#question-image{
+     position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#question-title{
+    color: white;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    width: 70%;
+    margin: 15px 0px 25px 0px;
+}
+
+#responses-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 190px;
+}
+
+.respones{
+    width: 120%;
+    height: 20%;
+    color: white;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    margin: 6px 0px 6px 0px;
+    padding-top: 3px;
+    border-radius: 10px;
+    transition: width 0.6s ease;
+}
+
+.respones:hover{
+    width: 50%;
+}
+
+#response1 {
+    background-color: #ef5739;
+}
+
+
+#response2 {
+    background-color:#73d370;
+}
+
+#response3 {
+    background-color:#9462db;
+}
+
+#response4 {
+    background-color:#db9e62;
+}
+
+
+#quiz-creation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Myriad Pro", sans-serif;
+}
+
+#quiz-form-title {
+    font-weight: 500;
+    font-size: 22pt;
+    text-align: center;
+    margin: 35px 0px 35px 0px;
+    padding-bottom: 5px;
+    width: 65%;
+    border-bottom: solid white 2px;
+}
+
+#quiz-form {
+    width: 80%;
+    text-align: center;
+}
+
+#formfirstline{
+    position: relative;
+    text-align: left;
+    padding-left: 13px;
+}
+
+#formfirstline input{
+   margin-right: 8px;
+}
+
+#quiz-form label {
+    font-size: 15pt;
+    margin-bottom: 15px;
+}
+
+#quiz-form small {
+    font-size: 9pt;
+}
+
+#quiz-form input{
+    font-size: 12pt;
+    background-color: transparent;
+    border: solid white 1px;
+    border-radius: 6px;
+    width: 40%;
+    margin-bottom: 15px;
+}
+
+#QuizzPictureButton{
+    width: 85px;
+   position: absolute;
+    top: -15px;
+}
+
+#quiz-form button{
+    background-color: transparent;
+    border: solid white 1px;
+    padding: 5px 15px 5px 15px;
+    font-size: 12pt;
+    border-radius: 8px;
+    transition: background-color 0.6s,color 0.5s;
+    margin-bottom: 15px;
+}
+
+#quiz-form button:hover{
+    background-color: white;
+    color: #222222;
+}
+
+#quiz-form .radio{
+    width: 20px;
+}
+
+#form-question-param{
+    border-top: solid white 2px;
+    padding-top: 25px;
+    margin-top: 10px;
+}
